@@ -1,0 +1,35 @@
+body{
+    text-align: center;
+    background-color: rgb(244, 96, 255);
+} 
+
+h1 {
+    font-size: 5rem;
+    color: rgb(0, 255, 8);
+    font-family: "Fruktur", cursive;
+    text-shadow: 5px 0 rgb(234, 255, 49);
+  }
+  h2{
+    font-size: 2rem;
+    color: rgb(0, 255, 8);
+    font-family: "Fruktur", cursive;
+    text-shadow: 2px 0 rgb(234, 255, 49);
+  }
+  h3{
+    font-size: 1rem;
+    color: rgb(0, 34, 255);
+    font-family: "Fruktur", cursive;
+    text-shadow: 1.5px 0 rgb(255, 0, 0)
+  }
+  .result{
+    font-size: 1rem;
+    color: rgb(0, 34, 255);
+    font-family: "Fruktur", cursive;
+    text-shadow: 1.5px 0 rgb(255, 0, 0)
+  }
+  .history{
+    font-size: 1rem;
+    color: rgb(0, 34, 255);
+    font-family: "Fruktur", cursive;
+    text-shadow: 1.5px 0 rgb(255, 0, 0)
+  }

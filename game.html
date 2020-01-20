@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <h1>
+        What is da NUM ???
+    </h1>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <h2>&nbsp;Munual :&nbsp;</h2>
+                </td>
+                <td>
+                    <div class = "Manual :">
+                         <h3>&nbsp; A random number is between 1 and 100. Let's guess it in 10 times.  We will tell you if your number is too low or too high. &nbsp;</h3>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <div class = "from">
+        <input type="text" id="guessField" placeholder="Enter a number (1-100)">
+        <input type="submit" value="Check!" class="guessSubmit" id="submitguess">
+        
+    </div>
+    <br>
+    <table align="center">
+        <tbody>
+            <tr>
+                <td>
+                    <div class="result">
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <td>
+                            <h2>&nbsp;History : &nbsp;&nbsp;&nbsp;</h2>
+                        </td>
+                        <td class="history"></td>
+                    </td>
+                </tr>
+            </tbody>
+    </table>
+    <br><br><br>
+    <div class = "from">
+        <a href="game.html"><input type="submit" value="Here wo go again.." class="restart" id="restartgame" ></a>
+        <br><br>
+        <a href="index.html"><input type="submit" value="<-- back to menu" class="restart" id="restartgame" ></a>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

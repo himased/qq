@@ -88,7 +88,7 @@ db.collection('Contact').orderBy("Firstname").onSnapshot(doc =>{
                 var options = {
                   title: 'Gender of Spectators',
                   titleTextStyle: {color: 'Purple', fontSize: 17},
-                  colors:['#EC02FF','#3055FF','#7EE182'] ,
+                  colors:['#F4FF00','#FF80EF','#FF0000'] ,
                   pieHole: 1,
                 };
         

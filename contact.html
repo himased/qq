@@ -137,50 +137,86 @@
             <!--</ol>-->
           
 <!--*************************************************************************************************************-->
-<section class="content">
-              
-    <div class="box box-info">
-      <div class="box-header ui-sortable-handle" style="cursor: move;">
-        <i class="fa fa-envelope"></i>
+          <section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box box-info">
+                    <div class="box-header">
+                      <i class="fa fa-edit"></i>
+                        <h3 class="card-title" style="border: 5px;">Contact 4 work</h3>
+                    </div>
+                    <div class="box-body">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="">&nbsp;&nbsp;First name</label>
+                                <input type="text" id="Firstname" class="form-control" placeholder="Firstname...">
+                            </div>
+                            <div class="form-group">
+                                <label for="">&nbsp;&nbsp; Last name</label>
+                                <input type="text" id="Lastname" class="form-control" placeholder="Lastname...">
+                            </div>
+                            <div class="form-group" id="myRadio">
+                                <label for="">&nbsp;&nbsp;Gender</label><br><br>
+                                <input type="radio"   name="gender" value="Male">&nbsp;&nbsp;Male &nbsp;&nbsp;
+                                <input type="radio"   name="gender" value="Female">&nbsp;&nbsp;Female &nbsp;&nbsp;
+                                <input type="radio"   name="gender" value="Others">&nbsp;&nbsp;Others <br><br>
 
-        <h3 class="box-title">Contact us</h3>
-        <!-- tools box -->
-        
-        <!-- /. tools -->
-      </div>
-      <div class="box-body">
-        <form action="#" method="post">
-          <div class="form-group">
-            <input type="text" class="form-control" name="emailto" placeholder="From:">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" name="subject" placeholder="Subject">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" name="message" placeholder="Message plz..">
-          </div>
-      <div>
-        
-        
-
-      </div>
-      </form>
-      <div class="box-footer clearfix">
-        <a href="contact.html"><button type="button" class="pull-right btn btn-default" id="sendEmail">Click bait
-          <i class="fa fa-arrow-circle-right"></i></button>
-        </a>
-      </div>
-    </div>
-  </section>
+                            </div>
+                            <div class="form-group">
+                                <label for="">&nbsp;&nbsp;E-mail</label>
+                                <input type="email" id="Email" class="form-control" placeholder="uracc@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="">&nbsp;&nbsp;Detail</label>
+                                <textarea type="textbox" id="Detail" class="form-control" placeholder="......">&nbsp;&nbsp;</textarea>
+                            </div>
+                            
+                        </form>
+                        <button id="pass" class="btn btn-primary btn-flat">Submit</button>
+                        <button id="reset" class="btn btn-primary btn-flat">Reset</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class = "col-md-4" id="Piechart" style="width: 400px; height: 250px; ">
+                
+            </div>
+            <div class="col-md-6">
+                <div class="box">
+                    <div class="box-header">
+                      <i class="fa fa-gears"></i>
   
-</div>
+                        <h3 class="box-title">My Contact List</h3>
+                    </div>
+                    <div class="box-body">
+                        <table class="table text-white">
+                            <thead>
+                                <tr>
+                                    <th>First name</th>
+                                    <th>Last name</th>
+                                    <th>Gender</th>
+                                    <th>E-mail</th>
+                                    <th>Detail</th>
+                                </tr>
+                            </thead>
+                            <tbody>
 
-            
-            
-      
-          </section>
-          <!-- /.content -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="box-footer">
+                        <h4 id="gpatotal"></h4>
+                        <h4 id="gpatotal_letter"></h4>
+
+                    </div>
+                </div>
+                
+            </div>
         </div>
+    </div>
+</section>
+
         <!-- /.content-wrapper -->
       
         <footer class="main-footer">
@@ -385,7 +421,7 @@
         <!-- Add the sidebar's background. This div must be placed
              immediately after the control sidebar -->
         <div class="control-sidebar-bg"></div>
-      </div>
+    
       <!-- jQuery 3 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
@@ -403,4 +439,12 @@
     $('.sidebar-menu').tree()
   })
 </script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="form.js"></script>
 </body>
